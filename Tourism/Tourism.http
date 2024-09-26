@@ -1,0 +1,16 @@
+@Tourism_HostAddress = https://localhost:5171
+
+GET {{Tourism_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Tourism_HostAddress}}/api/account/register
+Content-Type: application/json
+
+{
+    "UserName": "testuser",
+    "Email": "testuser@example.com",
+    "Password": "Password123!"
+}
+
